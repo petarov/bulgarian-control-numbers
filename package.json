@@ -1,7 +1,7 @@
 {
   "name": "@petarov/bulgarian-control-numbers",
   "version": "1.0.0",
-  "description": "Контролни цифри ползвани в България - ЕГН, ЛНЧ, Булстат, IBAN",
+  "description": "Контролни цифри ползвани в България (ЕГН, ЛНЧ, Булстат, IBAN)",
   "main": "build/index.js",
   "scripts": {
     "build": "webpack",
