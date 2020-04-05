@@ -8,11 +8,11 @@ const CONTROLS = [2, 4, 8, 5, 10, 9, 7, 3, 6];
 class EGN {
   constructor(value) {
     if (typeof value !== "string") {
-      throw value + " is not of type string!";
+      throw new Error(value + " is not of type string!");
     }
 
     if (value.length !== 10) {
-      throw value + " is not of size 10!";
+      throw new Error(value + " is not of size 10!");
     }
 
     this._value = value;

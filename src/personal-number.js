@@ -23,9 +23,9 @@ class PersonalNumber {
       return false;
     }
 
-    let sum = ~~this._value.charAt(0);
+    let sum = 0;
 
-    for (let i = 1; i < this._value.length - 1; i++) {
+    for (let i = 0; i < this._value.length - 1; i++) {
       sum += ~~this._value.charAt(i) * CONTROLS[i];
     }
 
