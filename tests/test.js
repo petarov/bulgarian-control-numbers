@@ -1,5 +1,27 @@
 import BGC from '../src/index';
 
+test('valid БУЛСТАТ numbers', () => {
+  let bs = BGC.bulstat('131071587'); // Лидл
+  expect(bs.isValid()).toBeTruthy();
+  expect(bs.value).toBe('131071587');
+
+  bs = BGC.bulstat('BG131129282'); // Кауфланд
+  expect(bs.isValid()).toBeTruthy();
+  expect(bs.value).toBe('131129282');
+
+  bs = BGC.bulstat('130007884'); // Билла
+  expect(bs.isValid()).toBeTruthy();
+  expect(bs.value).toBe('130007884');
+
+  bs = BGC.bulstat('130408101'); // Булсатком
+  expect(bs.isValid()).toBeTruthy();
+  expect(bs.value).toBe('130408101');
+
+  bs = BGC.bulstat('0009039460577'); // Социални услуги в общността поделение
+  expect(bs.isValid()).toBeTruthy();
+  expect(bs.value).toBe('0009039460577');
+});
+
 test('valid ЛНЧ numbers', () => {
   expect(() => BGC.personalNumber(1234567890)).toThrow();
 
