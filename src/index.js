@@ -3,7 +3,7 @@ import EGN from "./egn";
 import Bulstat from "./bulstat";
 import IBAN from "./iban";
 
-class BGC {
+class BGCN {
   static personalNumber = (number) => {
     return new PersonalNumber(number);
   };
@@ -29,4 +29,4 @@ class BGC {
   };
 }
 
-export default BGC;
+export default BGCN;
