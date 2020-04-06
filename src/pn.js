@@ -8,7 +8,7 @@ const CONTROLS = [21, 19, 17, 13, 11, 9, 7, 3, 1];
 class PersonalNumber {
   constructor(value) {
     if (typeof value !== "string") {
-      throw new Error(value + " is not of type string!");
+      throw new Error(`${value} is not of type string!`);
     }
 
     this._value = value;

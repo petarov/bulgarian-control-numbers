@@ -11,7 +11,7 @@ const CONTROLS_13_2 = [4, 9, 5, 7];
 class Bulstat {
   constructor(value) {
     if (typeof value !== "string") {
-      throw new Error(value + " is not of type string!");
+      throw new Error(`${value} is not of type string!`);
     }
 
     if (value.length > 2 && value.substr(0, 2) == "BG") {
@@ -19,7 +19,7 @@ class Bulstat {
     }
 
     if (value.length !== 9 && value.length !== 13) {
-      throw new Error(value + " is not of size 9 or 13!");
+      throw new Error(`${value} is not of size 9 or 13!`);
     }
 
     this._value = value;
