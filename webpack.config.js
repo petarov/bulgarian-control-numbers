@@ -29,7 +29,7 @@ module.exports = {
   output: {
     filename: `bgcn-${version}.js`,
     path: path.resolve(__dirname, 'build'),
-    library: 'bulgarian-control-numbers',
+    library: 'BGCN',
     libraryTarget: 'umd'
   },
   module: {
