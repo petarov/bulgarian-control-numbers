@@ -9,7 +9,7 @@ class BGC {
 
   static pn = (number) => {
     return this.personalNumber(number);
-  }
+  };
 
   static egn = (number) => {
     return new EGN(number);
