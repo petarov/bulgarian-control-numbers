@@ -27,7 +27,7 @@ module.exports = {
   mode: "production",
   entry: './src/index.js',
   output: {
-    filename: `bgcn-${version}.js`,
+    filename: `bgcn.js`,
     path: path.resolve(__dirname, 'build'),
     library: 'BGCN',
     libraryTarget: 'umd'

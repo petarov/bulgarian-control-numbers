@@ -1,18 +1,15 @@
 {
-  "name": "@petarov/bulgarian-control-numbers",
-  "version": "1.0.0",
+  "name": "bulgarian-control-numbers",
+  "version": "1.0.1",
   "description": "Контролни цифри ползвани в България (ЕГН, ЛНЧ, Булстат, IBAN)",
-  "main": "build/index.js",
+  "main": "build/bgcn.js",
   "scripts": {
     "build": "webpack",
     "test": "jest",
     "prepare": "npm run build",
     "trypublish": "npm publish || true"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/petarov/bulgarian-control-numbers"
-  },
+  "repository": "https://github.com/petarov/bulgarian-control-numbers",
   "author": "Petar Petrov (https://github.com/petarov)",
   "license": "MIT",
   "bugs": {
@@ -45,7 +42,10 @@
   },
   "dependencies": {},
   "jest": {
-    "reporters": [ "default", "jest-junit" ],
+    "reporters": [
+      "default",
+      "jest-junit"
+    ],
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/scripts/testMock.js",
       "\\.(css|less)$": "<rootDir>/scripts/testMock.js"
@@ -54,5 +54,6 @@
   "jest-junit": {
     "outputDirectory": "test-results/jest",
     "outputName": "results.xml"
-  }
+  },
+  "private": false
 }
