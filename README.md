@@ -1,8 +1,10 @@
 Bulgarian Control Numbers
 ==========================
 
-[![CircleCI](https://circleci.com/gh/petarov/bulgarian-control-numbers.svg?style=svg)](https://circleci.com/gh/petarov/bulgarian-control-numbers)
+[![CircleCI](https://circleci.com/gh/petarov/bulgarian-control-numbers.svg?style=svg)](https://circleci.com/gh/petarov/bulgarian-control-numbers) [![npm version][npm-image]][npm-url]
 
+[npm-url]: https://www.npmjs.com/package/bulgarian-control-numbers
+[npm-image]: https://img.shields.io/npm/v/bulgarian-control-numbers.svg
 
 :bulgaria: Проверка на контролни цифри ползвани в България - ЕГН, ЛНЧ, Булстат, IBAN.
 
