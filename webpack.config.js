@@ -27,7 +27,7 @@ module.exports = {
   mode: "production",
   entry: './src/index.js',
   output: {
-    filename: 'bgc.js',
+    filename: `bgcn-${version}.js`,
     path: path.resolve(__dirname, 'build'),
     library: 'bulgarian-control-numbers',
     libraryTarget: 'umd'
