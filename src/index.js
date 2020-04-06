@@ -1,4 +1,4 @@
-import PersonalNumber from "./personal-number";
+import PersonalNumber from "./pn";
 import EGN from "./egn";
 import Bulstat from "./bulstat";
 
@@ -6,6 +6,10 @@ class BGC {
   static personalNumber = (number) => {
     return new PersonalNumber(number);
   };
+
+  static pn = (number) => {
+    return this.personalNumber(number);
+  }
 
   static egn = (number) => {
     return new EGN(number);
