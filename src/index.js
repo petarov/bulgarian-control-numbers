@@ -1,6 +1,7 @@
 import PersonalNumber from "./pn";
 import EGN from "./egn";
 import Bulstat from "./bulstat";
+import IBAN from "./iban";
 
 class BGC {
   static personalNumber = (number) => {
@@ -21,6 +22,10 @@ class BGC {
       return new EGN(number);
     }
     return new Bulstat(number);
+  };
+
+  static iban = (number) => {
+    return new IBAN(number);
   };
 }
 

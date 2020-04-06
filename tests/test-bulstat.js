@@ -29,4 +29,8 @@ test('valid БУЛСТАТ numbers', () => {
   bs = BGC.bulstat('6101057509'); // ЕТ/ЕГН
   expect(bs.isValid()).toBeTruthy();
   expect(bs.value).toBe('6101057509');
+
+  bs = BGC.bulstat('0000568780291'); // Община Средец
+  expect(bs.isValid()).toBeTruthy();
+  expect(bs.value).toBe('0000568780291');
 });
