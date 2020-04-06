@@ -30,7 +30,8 @@ module.exports = {
     filename: `bgcn.js`,
     path: path.resolve(__dirname, 'build'),
     library: 'BGCN',
-    libraryTarget: 'umd'
+    libraryTarget: 'umd',
+    globalObject: 'this'
   },
   module: {
     rules: [

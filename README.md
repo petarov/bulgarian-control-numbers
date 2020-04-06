@@ -19,7 +19,7 @@ Use [build/bgcn.js](build/bgcn.js) for web.
 As a node.js module:
 
 ```javascript
-const BGCN = require('bulgarian-control-numbers');
+const BGCN = require('bulgarian-control-numbers').default;
 
 const egn = BGCN.egn('0550290476');
 egn.isValid(); // true
@@ -48,6 +48,7 @@ In a web page:
 ```html
 <script type="text/javascript" src="bgcn.js"></script>
 <script>
+    var BGCN = BGCN.default;
     var egn = BGCN.egn('0550290476');
     // ...
 </script>
