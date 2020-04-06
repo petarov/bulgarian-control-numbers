@@ -12,6 +12,8 @@ Bulgarian Control Numbers
 
     yarn install bulgarian-control-numbers
 
+Use [build/bgcn.js](build/bgcn.js) for web.
+
 # Usage
 
 As a node.js module:
@@ -44,7 +46,7 @@ iban.bic // 'UNCRBGSF'
 In a web page:
 
 ```html
-<script type="text/javascript" src="bgcn-1.0.0.js"></script>
+<script type="text/javascript" src="bgcn.js"></script>
 <script>
     var egn = BGCN.egn('0550290476');
     // ...
