@@ -10,9 +10,15 @@ Bulgarian Control Numbers
 
 # Install
 
-    yarn install bulgarian-control-numbers
+    npm install bulgarian-control-numbers
 
-Use [build/bgcn.js](build/bgcn.js) for web.
+or
+
+    yarn add bulgarian-control-numbers
+
+or
+
+    <script type="text/javascript" src="build/bgcn.js"></script>
 
 # Usage
 
@@ -29,11 +35,11 @@ egn.birthday.day // 29
 egn.birthday.month // 10
 egn.birthday.year // 2005
 
-const lnch = BGCN.pn('1001122334');
-egn.isValid(); // true
+const pn = BGCN.pn('1001122334'); // ЛНЧ
+pn.isValid(); // true
 
 const bulstat = BGCN.bulstat('BG131071587')
-bulstat.isValid(); // true
+bulstat.isValid() // true
 bulstat.value // '131071587'
 
 const iban = BGCN.iban('BG15UNCR70001522604629');
