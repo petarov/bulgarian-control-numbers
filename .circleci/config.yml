@@ -21,10 +21,10 @@ jobs:
 
       - run: yarn test
 
-      - run: yarn build
-
       - store_test_results:
-          path: test-results/jest
+          path: test-results/jest/results.xml
+
+      - run: yarn build
 
       - store_artifacts:
           path: build/
