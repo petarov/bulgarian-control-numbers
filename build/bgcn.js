@@ -1,6 +1,6 @@
 /*!
  * 
- *   bulgarian-control-numbers v1.0.2
+ *   bulgarian-control-numbers v1.0.3
  *   undefined
  * 
  *   Copyright (c) 2020 Petar Petrov (https://github.com/petarov)
