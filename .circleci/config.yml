@@ -21,14 +21,18 @@ jobs:
 
       - run: yarn test
 
-      - store_test_results:
-          path: test-results/jest/results.xml
-
       - run: yarn build
+      
+      - store_test_results:
+          path: test-results
 
       - store_artifacts:
-          path: build/
+          path: build
           destination: build
+          
+      - store_artifacts:
+          path: test-results
+          destination: test-results
 
 workflows:
     build-and-test:
