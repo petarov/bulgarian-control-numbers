@@ -18,7 +18,9 @@ or
 
 or
 
+```javascript
     <script type="text/javascript" src="build/bgcn.js"></script>
+```
 
 # Usage
 
