@@ -18,8 +18,8 @@ or
 
 or
 
-```javascript
-    <script type="text/javascript" src="build/bgcn.js"></script>
+```html
+<script type="text/javascript" src="bgcn.js"></script>
 ```
 
 # Usage
@@ -64,11 +64,11 @@ In a web page:
 
 # Development
 
-Run `yarn install` to setup dependencies.
+Run `yarn install` to install dependencies.
 
 Run `yarn test` to run unit tests.
 
-Run `yarn build` to produce distributable.
+Run `yarn build` to create a build.
 
 # References
 
