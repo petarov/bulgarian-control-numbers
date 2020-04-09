@@ -1,6 +1,6 @@
 {
   "name": "bulgarian-control-numbers",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Контролни цифри ползвани в България (ЕГН, ЛНЧ, Булстат, IBAN)",
   "main": "build/bgcn.js",
   "scripts": {
