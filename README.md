@@ -49,6 +49,9 @@ iban.isValid() // true
 iban.value // 'BG15UNCR70001522604629'
 iban.accountNo // '22604629'
 iban.bic // 'UNCRBGSF'
+
+BGCN.isValid('BG131071587') // true
+BGCN.isValid('BG15UNCR70001522604629') // true
 ```
 
 In a web page:

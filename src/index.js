@@ -27,6 +27,26 @@ class BGCN {
   static iban = (value) => {
     return new IBAN(value);
   };
+
+  static isValid = (value) => {
+    if (typeof value !== "string") {
+      throw new Error(`${value} is not of type string!`);
+    }
+    value = value.replace(/\s/g, "");
+    switch (value.length) {
+      case 22:
+        return this.iban(value).isValid();
+      case 9:
+      case 11: // BGxxxxxxxxx
+      case 13:
+        return this.bulstat(value).isValid();
+      case 10:
+        return this.egn(value).isValid() || this.pn(value).isValid();
+      // default:
+      //   throw new Error(`${value} with size ${value.length} is not a known control number!`);
+    }
+    return false;
+  };
 }
 
 export default BGCN;
