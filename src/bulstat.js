@@ -29,7 +29,7 @@ class Bulstat {
     return this._value;
   }
 
-  isValid = () => {
+  get isValid() {
     let val = [];
 
     for (let i = 0; i < this._value.length; i++) {
@@ -76,7 +76,7 @@ class Bulstat {
     }
 
     return mod === val[12];
-  };
+  }
 }
 
 export default Bulstat;

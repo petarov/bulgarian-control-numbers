@@ -30,7 +30,7 @@ As a node.js module:
 const BGCN = require('bulgarian-control-numbers').default;
 
 const egn = BGCN.egn('0550290476');
-egn.isValid(); // true
+egn.isValid // true
 egn.value // '0550290476'
 egn.gender // 'f'
 egn.birthday.day // 29
@@ -38,14 +38,14 @@ egn.birthday.month // 10
 egn.birthday.year // 2005
 
 const pn = BGCN.pn('1001122334'); // ЛНЧ
-pn.isValid(); // true
+pn.isValid // true
 
 const bulstat = BGCN.bulstat('BG131071587')
-bulstat.isValid() // true
+bulstat.isValid// true
 bulstat.value // '131071587'
 
 const iban = BGCN.iban('BG15UNCR70001522604629');
-iban.isValid() // true
+iban.isValid// true
 iban.value // 'BG15UNCR70001522604629'
 iban.accountNo // '22604629'
 iban.bic // 'UNCRBGSF'

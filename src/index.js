@@ -35,13 +35,13 @@ class BGCN {
     value = value.replace(/\s/g, "");
     switch (value.length) {
       case 22:
-        return this.iban(value).isValid();
+        return this.iban(value).isValid;
       case 9:
       case 11: // BGxxxxxxxxx
       case 13:
-        return this.bulstat(value).isValid();
+        return this.bulstat(value).isValid;
       case 10:
-        return this.egn(value).isValid() || this.pn(value).isValid();
+        return this.egn(value).isValid || this.pn(value).isValid;
       // default:
       //   throw new Error(`${value} with size ${value.length} is not a known control number!`);
     }

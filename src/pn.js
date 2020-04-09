@@ -18,7 +18,7 @@ class PersonalNumber {
     return this._value;
   }
 
-  isValid = () => {
+  get isValid() {
     if (this._value.length !== 10) {
       return false;
     }
@@ -31,7 +31,7 @@ class PersonalNumber {
 
     const mod = sum % 10;
     return mod === ~~this._value.charAt(9);
-  };
+  }
 }
 
 export default PersonalNumber;

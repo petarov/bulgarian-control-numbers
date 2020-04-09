@@ -53,7 +53,7 @@ class EGN {
     this._birthday = { year, month, day };
   };
 
-  isValid = () => {
+  get isValid() {
     let sum = 0;
 
     for (let i = 0; i < this._value.length - 1; i++) {
@@ -64,7 +64,7 @@ class EGN {
     mod = mod < 10 ? mod : 0;
 
     return mod === ~~this._value.charAt(9);
-  };
+  }
 }
 
 export default EGN;

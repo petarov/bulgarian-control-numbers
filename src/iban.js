@@ -58,7 +58,7 @@ class IBAN {
     return divident % divisor;
   };
 
-  isValid = () => {
+  get isValid() {
     // Rearrange
     let transformed = this._value.substring(4) + this._value.substr(0, 4);
 
@@ -78,7 +78,7 @@ class IBAN {
 
     // Compute remainder
     return 1 === this._modulo(digits.join(""), 97);
-  };
+  }
 }
 
 export default IBAN;
