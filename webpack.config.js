@@ -15,7 +15,7 @@ const year = new Date().getFullYear();
 
 const banner = `
   ${name} v${version}
-  ${repository.url}
+  ${repository}
 
   Copyright (c) ${year} ${author.replace(/ *\<[^)]*\> */g, " ")}
 
