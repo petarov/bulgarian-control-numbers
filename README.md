@@ -19,7 +19,7 @@ or
 or
 
 ```html
-<script type="text/javascript" src="bgcn.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bulgarian-control-numbers@<VERSION>/build/bgcn.js"></script>
 ```
 
 # Usage
