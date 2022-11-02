@@ -13,7 +13,11 @@ jobs:
           keys:
             - v1-repo-{{ checksum "yarn.lock" }}
 
-      - run: yarn install
+      - run:
+          name: install yarn deps
+          command: yarn install
+          environment:
+            NODE_OPTIONS: --openssl-legacy-provider
 
       - save_cache:
           key: v1-repo-{{ checksum "yarn.lock" }}
