@@ -6,6 +6,8 @@ jobs:
     executor:
       name: node/default
       tag: 'lts'
+    environment:
+      NODE_OPTIONS: --openssl-legacy-provider      
     steps:
       - checkout
 
@@ -13,11 +15,7 @@ jobs:
           keys:
             - v1-repo-{{ checksum "yarn.lock" }}
 
-      - run:
-          name: install yarn deps
-          command: yarn install
-          environment:
-            NODE_OPTIONS: --openssl-legacy-provider
+      - run: yarn install
 
       - save_cache:
           key: v1-repo-{{ checksum "yarn.lock" }}
