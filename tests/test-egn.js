@@ -6,6 +6,11 @@ test('invalid ЕГН numbers', () => {
   expect(BGCN.egn('9929291278').isValid).toBeFalsy();
 });
 
+test('ЕГН with valid checksum but invalid date', () => {
+  // month 34 -> 14 (1812), day 56
+  expect(BGCN.egn('1234567890').isValid).toBeFalsy();
+});
+
 test('valid ЕГН numbers', () => {
   let egn = BGCN.egn('0550290476');
   expect(egn.isValid).toBeTruthy();

@@ -54,6 +54,16 @@ class EGN {
   };
 
   get isValid() {
+    const { year, month, day } = this._birthday;
+
+    if (month < 1 || month > 12 || day < 1) {
+      return false;
+    }
+
+    if (day > new Date(Date.UTC(year, month, 0)).getUTCDate()) {
+      return false;
+    }
+
     let sum = 0;
 
     for (let i = 0; i < this._value.length - 1; i++) {
