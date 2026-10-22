@@ -1,7 +1,7 @@
 Bulgarian Control Numbers
 ==========================
 
-[![build-and-test](https://github.com/petarov/bulgarian-control-numbers/actions/workflows/build.yml/badge.svg)](https://github.com/petarov/bulgarian-control-numbers/actions/workflows/build.yml)
+[![build-and-test](https://github.com/petarov/bulgarian-control-numbers/actions/workflows/build.yml/badge.svg)](https://github.com/petarov/bulgarian-control-numbers/actions/workflows/build.yml) [![npm version][npm-image]][npm-url]
 
 [npm-url]: https://www.npmjs.com/package/bulgarian-control-numbers
 [npm-image]: https://img.shields.io/npm/v/bulgarian-control-numbers.svg
