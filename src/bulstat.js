@@ -52,12 +52,14 @@ class Bulstat {
       mod = mod > 9 ? 0 : mod;
     }
 
-    if (this._value.length === 9) {
-      return mod === val[8];
+    // проверка на контролната 9-та БУЛСТАТ цифра
+    if (mod !== val[8]) {
+      return false;
     }
 
-    // set control for 9-digit BULSTAT
-    val[8] = mod;
+    if (this._value.length === 9) {
+      return true;
+    }
 
     sum = 0;
     for (let i = 8; i < 12; i++) {

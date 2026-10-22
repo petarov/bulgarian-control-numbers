@@ -5,6 +5,14 @@ test('invalid БУЛСТАТ numbers', () => {
   expect(() => BGCN.bulstat('123')).toThrow();
 });
 
+test('13-digit БУЛСТАТ must have a valid 9-digit БУЛСТАТ prefix', () => {
+  // 123456786 is a valid 9-digit БУЛСТАТ, 13th digit is valid for it
+  expect(BGCN.bulstat('1234567860016').isValid).toBeTruthy();
+  // same, but the 9th digit does not match the 9-digit control
+  expect(BGCN.bulstat('1234567800016').isValid).toBeFalsy();
+  expect(BGCN.bulstat('1234567890016').isValid).toBeFalsy();
+});
+
 test('valid БУЛСТАТ numbers', () => {
   let bs = BGCN.bulstat('131071587'); // Лидл
   expect(bs.isValid).toBeTruthy();
