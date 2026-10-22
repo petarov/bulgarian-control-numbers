@@ -1,0 +1,38 @@
+name: build-and-test
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    env:
+      NODE_OPTIONS: --openssl-legacy-provider
+      JEST_JUNIT_OUTPUT_DIR: test-results
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: yarn
+
+      - run: yarn install
+
+      - run: yarn test
+
+      - run: yarn build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: build
+          path: build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: test-results
