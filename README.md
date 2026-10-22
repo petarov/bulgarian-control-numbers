@@ -1,7 +1,7 @@
 Bulgarian Control Numbers
 ==========================
 
-[![CircleCI](https://circleci.com/gh/petarov/bulgarian-control-numbers.svg?style=svg)](https://circleci.com/gh/petarov/bulgarian-control-numbers) [![npm version][npm-image]][npm-url]
+[![build-and-test](https://github.com/petarov/bulgarian-control-numbers/actions/workflows/build.yml/badge.svg)](https://github.com/petarov/bulgarian-control-numbers/actions/workflows/build.yml)
 
 [npm-url]: https://www.npmjs.com/package/bulgarian-control-numbers
 [npm-image]: https://img.shields.io/npm/v/bulgarian-control-numbers.svg
