@@ -30,20 +30,22 @@ class BGCN {
 
   static isValid = (value) => {
     if (typeof value !== "string") {
-      throw new Error(`${value} is not of type string!`);
+      return false;
     }
+
     value = value.replace(/\s/g, "");
+    const hasPrefix = /^BG/i.test(value);
+
     switch (value.length) {
       case 22:
         return this.iban(value).isValid;
       case 9:
-      case 11: // BGxxxxxxxxx
       case 13:
-        return this.bulstat(value).isValid;
+        return !hasPrefix && this.bulstat(value).isValid;
+      case 11: // BGxxxxxxxxx
+        return hasPrefix && this.bulstat(value).isValid;
       case 10:
         return this.egn(value).isValid || this.pn(value).isValid;
-      // default:
-      //   throw new Error(`${value} with size ${value.length} is not a known control number!`);
     }
     return false;
   };

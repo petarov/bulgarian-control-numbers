@@ -14,7 +14,7 @@ class Bulstat {
       throw new Error(`${value} is not of type string!`);
     }
 
-    if (value.length > 2 && value.substr(0, 2) == "BG") {
+    if (value.length > 2 && value.substring(0, 2).toUpperCase() == "BG") {
       value = value.substring(2);
     }
 
